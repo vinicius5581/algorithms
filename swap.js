@@ -4,11 +4,13 @@ const swap = (array, firstIndex, secondIndex) => {
 	array[secondIndex] = temp;
 };
 
-const testArray = [7, 9, 4];
+// const testArray = [7, 9, 4];
+// swap(testArray, 0, 1);
+// console.log(testArray); // [ 9, 7, 4 ]
+// swap(testArray, 1, 2);
+// console.log(testArray); // [ 9, 4, 7 ]
+// swap(testArray, 0, 2);
+// console.log(testArray);  // [ 7, 4, 9 ]
 
-swap(testArray, 0, 1);
-console.log(testArray);
-swap(testArray, 1, 2);
-console.log(testArray);
-swap(testArray, 0, 2);
-console.log(testArray);
+
+module.exports = swap;
