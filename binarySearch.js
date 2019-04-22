@@ -1,22 +1,33 @@
 /**
- *  Returns either the index of the location in the array,
- *  or -1 if the array did not contain the targetValue 
+ *  Binary Search
+ * 
+ *  - Requires a sorted array
+ *  - Returns either the index of the location in the array or -1 if the array did not contain the targetValue 
+ * 
+ *   Time: 
+ *      logarithmic time 
+ *      O(log n) 
+ * 
+ *   Space:  
+ *      constant space
+ *      O(1) 
+ * 
  *  */ 
  
-  const binarySearch = function(arr, targetValue) {
+  const binarySearch = function(array, targetValue) {
 	let min = 0;
-	let max = arr.length - 1;
+	let max = array.length - 1;
     let guess;
     let count = 0;
     while ( min <= max ){
         guess = Math.floor(( min + max ) / 2);
-        console.log('guess index: ', guess, ' value: ', arr[guess]);
+        console.log('guess index: ', guess, ' value: ', array[guess]);
         count++;
-        if (arr[guess] === targetValue){
+        if (array[guess] === targetValue){
           console.log('count: ',count);
           return guess;
         }
-        else if ( arr[guess] < targetValue ){
+        else if ( array[guess] < targetValue ){
           min = guess++;
         }
         else{
