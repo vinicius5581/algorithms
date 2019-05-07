@@ -1,16 +1,20 @@
-/**
- *  Binary Search
+/**  
+ *  @name Binary Search
+ *  @description Requires a sorted array,
  * 
- *  - Requires a sorted array
- *  - Returns either the index of the location in the array or -1 if the array did not contain the targetValue 
- * 
- *   Time: 
- *      logarithmic time 
- *      O(log n) 
+ *  Time: 
+ *     logarithmic time 
+ *  O(log n) 
  * 
  *   Space:  
  *      constant space
  *      O(1) 
+ * 
+ *   @param {array} array - The sorted array to be searched
+ *   @param {number} targetValue - The value to be found
+ * 
+ *   @returns Returns either the index of the location in the array or -1 if the array did not contain the targetValue 
+ * 
  * 
  *  */ 
  
