@@ -1,3 +1,7 @@
+/**
+ *  Θ(n^2)
+ */
+
 const swap = require('./swap');
 const indexOfMinimum = require('./indexOfMinimum');
 
