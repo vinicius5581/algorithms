@@ -209,3 +209,5 @@ class Node {
   // BFS!!!
   // 15, 3, 36, 2, 12, 28, 39
   console.log(bst.bfs())
+
+  console.log(bst)

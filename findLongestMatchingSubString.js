@@ -36,6 +36,7 @@ const longestSubSeq = (s1, s2) => {
     return `${longest} in ${count} runs`;
 }
 
+console.log('"ABCDEF", "ZGFHIJ": ',longestSubSeq("ABCDEF", "ZGFHIJ"));
 console.log('"ABCDEF", "ABCDEF": ',longestSubSeq("ABCDEF", "ABCDEF"));
 console.log('"ABAZDC", "BACBAD": ',longestSubSeq("ABAZDC", "BACBAD"));
 console.log('"aa", "aaaa": ',longestSubSeq("aa", "aaaa"));

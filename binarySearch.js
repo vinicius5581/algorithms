@@ -22,13 +22,10 @@
 	let min = 0;
 	let max = array.length - 1;
     let guess;
-    let count = 0;
     while ( min <= max ){
         guess = Math.floor(( min + max ) / 2);
-        console.log('guess index: ', guess, ' value: ', array[guess]);
         count++;
         if (array[guess] === targetValue){
-          console.log('count: ',count);
           return guess;
         }
         else if ( array[guess] < targetValue ){
